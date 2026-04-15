@@ -12,18 +12,6 @@ This directory contains two Python programs for audio processing:
 - soundfile library
 - FFmpeg (required for MP3 export)
 
-### Installing Dependencies
-
-1. Install Python packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. Install FFmpeg:
-   - On macOS: `brew install ffmpeg`
-   - On Ubuntu/Debian: `sudo apt install ffmpeg`
-   - On Windows: Download from https://ffmpeg.org/download.html
-
 ## Usage
 
 ### audio_sort.py
@@ -57,14 +45,5 @@ This creates a very long MP3 file containing:
 python audio_sort.py song.mp3 sorted_song.mp3 --segments 20
 python progressive_sort.py input.mp3 output.mp3
 ```
-
-## How it works
-
-1. The program loads the input MP3 file using librosa.
-2. It calculates the length of each segment by dividing the total audio length by the number of segments.
-3. Each segment is analyzed for its RMS value, which represents the average amplitude.
-4. The segments are sorted in ascending order of RMS (quietest to loudest).
-5. The sorted segments are concatenated into a single audio file.
-6. The result is exported as a new MP3 file.
 
 Made for MADD 26210 Media Arts and Design, taught by Takashi Shallow.
