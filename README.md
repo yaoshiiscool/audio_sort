@@ -8,15 +8,15 @@ Programs that literally sort samples of audio via the amplitude of their respect
 See requirements.txt
 
 ## Usage
-'''bash
+```bash
 python audio_sort.py <input_file.mp3> <output_file.mp3> [--segments N]
 python progressive_sort.py <input_file.mp3> <output_file.mp3>
-'''
+```
 
 Example usage:
-'''bash
+```bash
 python audio_sort.py song.mp3 sorted_song.mp3 --segments 20
 python progressive_sort.py input.mp3 output.mp3
-'''
+```
 
 Made for MADD 26210 Media Arts and Design, taught by Takashi Shallow. 
